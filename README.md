@@ -5,7 +5,7 @@
 воспроизводимым encode/decode roundtrip.
 
 Решение реализовано в ноутбуке [`burmalda.ipynb`](burmalda.ipynb) и рассчитано
-на запуск в Kaggle с одной NVIDIA GPU.
+на запуск в Kaggle с одной GPU.
 
 ## Задача
 
