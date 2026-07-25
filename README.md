@@ -9,8 +9,6 @@ compression ratio не ниже `32×`.
 
 **[Nuclear IT Hack — solution notebook](https://www.kaggle.com/code/daniilkrasnovvv/nuclear-it-hack-untitled-0-solution)**
 
-Числа в этом README взяты из успешного запуска версии 3/3.
-
 ## Результат
 
 Модель обучена на `N=256` уникальных погодных состояниях. Финальная оценка
