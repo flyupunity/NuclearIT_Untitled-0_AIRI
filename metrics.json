@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "source": {
+    "platform": "Kaggle",
+    "notebook": "Nuclear IT Hack — Untitled_0 solution",
+    "url": "https://www.kaggle.com/code/daniilkrasnovvv/nuclear-it-hack-untitled-0-solution",
+    "version": "3/3",
+    "run_status": "successful"
+  },
+  "experiment": {
+    "dataset": "ERA5 / WeatherBench2",
+    "grid": "0.5_degree_360x720",
+    "weather_channels": 28,
+    "unique_train_frames": 256,
+    "train_period": "2014-2019",
+    "validation_period": "2020",
+    "test_period": "2021",
+    "test_frames": 16,
+    "requested_compression_ratio": 32,
+    "selected_gain": 170.8232212456957
+  },
+  "reconstruction": {
+    "score_definition": "S_all = 0.5 * S_surface + 0.5 * S_pressure; lower is better",
+    "all_nrmse": 0.16605581767814365,
+    "surface_nrmse": 0.20306976098440893,
+    "pressure_nrmse": 0.1290418743718783,
+    "mean_psnr_db": 31.81999720004371,
+    "spectral_error": 0.036391084758259355,
+    "extreme_precipitation_rmse_mm": 9.765564506006177,
+    "extreme_precipitation_f1": 0.6907697580368366
+  },
+  "compression": {
+    "entropy_coder": "DEFLATE",
+    "numerator": "float32 28x360x720 only; static fields excluded",
+    "compression_ratio_mean": 33.167179612615776,
+    "compression_ratio_min": 32.96597726366854,
+    "compression_ratio_excess_percent": 3.6474362894242995,
+    "target_met_all_frames": true,
+    "exact_latent_roundtrip": true
+  },
+  "natural_variability_evaluation": {
+    "reference": "constant climatological fields from provided ERA5 means; errors normalized by provided natural field standard deviations",
+    "uses_vaeformer": false,
+    "bootstrap_confidence_level": 0.95,
+    "thresholds": {
+      "all_nrmse_upper_delta_percent": 3.0,
+      "surface_upper_delta_percent": 5.0,
+      "pressure_upper_delta_percent": 5.0,
+      "critical_field_upper_delta_percent": 7.0,
+      "psnr_lower_difference_db": -0.25,
+      "spectral_upper_degradation_percent": 5.0,
+      "required_compression_ratio": 32.0,
+      "exact_roundtrip_required": true
+    },
+    "critical_field_worst_upper_95_percent": -55.676008615982745,
+    "criteria_passed": 8,
+    "criteria_total": 8,
+    "passes_all_criteria": true
+  },
+  "latent_forecast_probe": {
+    "protocol": "frozen_codec_1024_pairs_plus_6h",
+    "forecast_horizon_hours": 6,
+    "status": "evaluated_on_test_2021",
+    "train_pairs": 1024,
+    "unique_train_pairs": 1024,
+    "validation_pairs": 32,
+    "test_pairs": 32,
+    "parameters": 194496,
+    "optimizer_steps": 5000,
+    "best_checkpoint_step": 5000,
+    "best_validation_latent_mse": 0.0007083201506500872,
+    "relative_improvement_vs_persistence_validation_percent": 20.01903715799651,
+    "relative_improvement_vs_persistence_test_percent": 19.02931555990971,
+    "reference_probe_comparison": "not_evaluable_without_reference_features"
+  },
+  "resources": {
+    "gpu": "Tesla P100-PCIE-16GB",
+    "gpu_count": 1,
+    "peak_allocated_vram_gib": 13.804665565490723,
+    "codec_parameters": 3389222,
+    "optimizer_steps_in_checkpoint": 12000,
+    "examples_seen": 24000,
+    "runtime_hours_current_execution": 0.35636617362499234,
+    "gpu_hours_current_execution": 0.35636617362499234,
+    "pretrained_checkpoint_reused": true,
+    "external_weather_pretraining": false,
+    "submission_archive_size_mib": 39.44166660308838
+  }
+}
