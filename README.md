@@ -4,12 +4,11 @@
 фактическим сжатием не менее `32×`, квантованным латентным представлением и
 воспроизводимым encode/decode roundtrip.
 
-Решение реализовано в ноутбуке [`burmalda.ipynb`](burmalda.ipynb) и рассчитано
-на запуск в Kaggle с одной NVIDIA GPU.
+Решение реализовано в ноутбуке [`[Nuclear IT Hack] Untitled_0 solution`](https://www.kaggle.com/code/daniilkrasnovvv/nuclear-it-hack-untitled-0-solution)  рассчитано
+на запуск в Kaggle с одной GPU P100.
 
 Опубликованный и успешно выполненный ноутбук:
 [Kaggle — Nuclear IT Hack solution](https://www.kaggle.com/code/daniilkrasnovvv/nuclear-it-hack-untitled-0-solution).
-Приведённые ниже численные результаты соответствуют версии 3 из 3.
 
 ## Итог опубликованного запуска
 
